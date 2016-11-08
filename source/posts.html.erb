@@ -1,0 +1,41 @@
+---
+title: Posts
+pageable: true
+---
+
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+        <% page_articles.each do |article| %>
+            <div class="post-preview">
+                <a href="<%= article.url %>">
+                    <h2 class="post-title">
+                        <%= article.title %>
+                    </h2>
+                    <h3 class="post-subtitle">
+                        <%= article.summary %>
+                    </h3>
+                </a>
+                <p class="post-meta">Posted on <%= article.date.strftime('%b %e %Y') %></p>
+            </div>
+            <hr>
+        <% end %>
+
+        <!-- Pager -->
+        <% if paginate %>
+            <ul class="pager">
+                <% if prev_page %>
+                    <li class="previous">
+                        <%= link_to '&larr; Newer Posts', prev_page %>
+                    </li>
+                <% end %>
+                <% if next_page %>
+                    <li class="next">
+                        <%= link_to 'Older Posts &rarr;', next_page %>
+                    </li>
+                <% end %>
+            </ul>
+        <% end %>
+
+    </div>
+</div>

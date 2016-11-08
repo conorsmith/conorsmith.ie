@@ -1,0 +1,31 @@
+---
+title: Welcome to Middleman
+---
+
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+        <% blog.articles[0...5].each do |article| %>
+            <div class="post-preview">
+                <a href="<%= article.url %>">
+                    <h2 class="post-title">
+                        <%= article.title %>
+                    </h2>
+                    <h3 class="post-subtitle">
+                        <%= article.summary %>
+                    </h3>
+                </a>
+                <p class="post-meta">Posted on <%= article.date.strftime('%b %e %Y') %></p>
+            </div>
+            <hr>
+        <% end %>
+
+        <!-- Pager -->
+        <ul class="pager">
+            <li class="next">
+                <a href="/posts">Older Posts &rarr;</a>
+            </li>
+        </ul>
+
+    </div>
+</div>
