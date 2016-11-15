@@ -1,0 +1,26 @@
+.post {
+  max-width: 800px;
+  margin: 0 auto;
+
+  font-family: 'Neuton', serif;
+  font-weight: 300;
+  font-size: 28px;
+
+  strong {
+    font-weight: 700;
+  }
+
+  em {
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  code {
+    font-family: "Source Code Pro", monospace;
+  }
+
+  p code {
+    padding: 2px 8px;
+    font-size: 75%;
+  }
+}
