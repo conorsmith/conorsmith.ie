@@ -2,21 +2,21 @@
   max-width: 800px;
   margin: 0 auto;
 
-  font-family: 'Neuton', serif;
-  font-weight: 300;
+  font-family: $font-family-body;
+  font-weight: $font-weight-body;
   font-size: 28px;
 
   strong {
-    font-weight: 700;
+    font-weight: $font-weight-body-strong;
   }
 
   em {
-    font-weight: 400;
+    font-weight: $font-weight-body-em;
     font-style: italic;
   }
 
   code {
-    font-family: "Source Code Pro", monospace;
+    font-family: $font-family-monospace;
   }
 
   p code {

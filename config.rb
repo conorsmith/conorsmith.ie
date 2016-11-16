@@ -38,6 +38,8 @@ configure :build do
   # activate :minify_javascript
 end
 
+page "/", :layout => "landing"
+
 activate :blog do |blog|
   blog.default_extension = ".md"
   blog.generate_day_pages = false

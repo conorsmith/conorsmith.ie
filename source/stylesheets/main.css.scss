@@ -1,4 +1,15 @@
 $fa-font-path: "../fonts/vendor";
+$font-family-sans-serif: 'Alegreya Sans', sans-serif;
+$font-family-serif: 'Neuton', serif;
+$font-family-monospace: "Source Code Pro", monospace;
+
+$font-family-heading: $font-family-sans-serif;
+$font-weight-heading: 900;
+
+$font-family-body: $font-family-serif;
+$font-weight-body: 300;
+$font-weight-body-strong: 700;
+$font-weight-body-em: 400;
 
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "../../node_modules/font-awesome/scss/font-awesome";
